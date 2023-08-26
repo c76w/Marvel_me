@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-neutral-900 text-gray-100 min-h-screen flex flex-col flex-1;
+}
+.container {
+	@apply px-4 max-w-[98%] mx-auto;
+}
+main {
+	flex: 1;
+	overflow: hidden;
+}
+.cover {
+	background-image: url('../public/avengers_1.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+input,
+input::placeholder {
+	color: #ed1d24;
+}
+.layer {
+	background-color: rgba(0, 0, 0, 0.95);
+}
+.hero-img div {
+	position: relative;
+}
+.hero-img div img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+/* Flexbox Cards */
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.card {
+	flex: 0 1 auto;
+	box-sizing: border-box;
+}
+
+/* xs for really small screens */
+@media (min-width: 280px) and (max-width: 320px) {
+	* {
+		font-size: 95%;
+	}
+	input,
+	input::placeholder {
+		font-size: 80%;
+	}
+	.search-input {
+		max-width: 160px;
+		padding: 0.27rem 0.75rem;
+	}
+}
+
+/* sm */
+@media screen and (min-width: 640px) {
+	.card {
+		max-width: calc(50% - 1em);
+	}
+}
+/* md */
+@media screen and (min-width: 768px) {
+	.card {
+		max-width: calc(33.333% - 1em);
+	}
+}
+/* lg */
+@media screen and (min-width: 1024px) {
+	.card {
+		max-width: calc(25% - 1em);
+	}
+}
+/* xl */
+@media screen and (min-width: 1280px) {
+}
+/* 2xl */
+@media screen and (min-width: 1536px) {
+}
