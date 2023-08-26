@@ -11,13 +11,13 @@ Marvelme was created for a project using NextJS and Tailwind CSS for styling. Us
 
 ## Screenshots
 
-![App Screenshot](https://github.com/c76w/marvelme_/blob/main/home_page.png)
+![App Screenshot](https://github.com/c76w/Marvel_me/master/blob/main/home_page.png)
 
-![App Screenshot](https://github.com/c76w/marvel_me/blob/main/characters_page.png)
+![App Screenshot](https://github.com/c76w/marvel_me/master/blob/main/characters_page.png)
 
-![App Screenshot](https://github.com/c76w/marvel_me/blob/main/character_details_page.png)
+![App Screenshot](https://github.com/c76w/marvel_me/master/blob/main/character_details_page.png)
 
-![App Screenshot](https://github.com/c76w/marvel_me/blob/main/search_page.png)
+![App Screenshot](https://github.com/c76w/marvel_me/master/blob/main/search_page.png)
 
 ## Environment Variables
 
