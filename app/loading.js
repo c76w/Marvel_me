@@ -1,5 +1,5 @@
 import React from 'react';
-import Shield from './imgs/capitan_america_sheild.png';
+import Shield from './imgs/capitan_america_shield.png';
 import Image from 'next/image';
 const Loading = () => {
 	return (
