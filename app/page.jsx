@@ -21,7 +21,8 @@ const Home = () => {
 									ease: [0.5, 0.71, 1, 1.5],
 								}}
 								initial={{ opacity: 0, scale: 0.5 }}
-								className='text-md'>
+								className='text-md'
+							>
 								Welcome to
 							</motion.p>
 							<motion.h1
@@ -32,7 +33,8 @@ const Home = () => {
 									ease: [0.5, 0.71, 1, 1.5],
 								}}
 								initial={{ opacity: 0, scale: 0.5 }}
-								className='text-4xl sm:text-6xl font-black mb-2'>
+								className='text-4xl sm:text-6xl font-black mb-2'
+							>
 								<span className='text-mred'>MARVEL</span>me
 							</motion.h1>
 							<motion.h3
@@ -43,8 +45,13 @@ const Home = () => {
 									ease: [0.5, 0.71, 1, 1.5],
 								}}
 								initial={{ opacity: 0, scale: 0.5 }}
-								className='text-sm mb-6'>
-								Explore the captivating world of Marvel characters and comics, where extraordinary heroes and villains come to life. Immerse yourself in the rich narratives and stunning illustrations of iconic characters like Spider-Man, Iron Man, Captain America, and the X-Men.
+								className='text-sm mb-6'
+							>
+								Explore the captivating world of Marvel characters and comics,
+								where extraordinary heroes and villains come to life. Immerse
+								yourself in the rich narratives and stunning illustrations of
+								iconic characters like Spider-Man, Iron Man, Captain America,
+								and the X-Men.
 							</motion.h3>
 							<motion.div
 								animate={{ y: [100, 0], opacity: 1, scale: 1 }}
@@ -54,10 +61,12 @@ const Home = () => {
 									ease: [0.5, 0.71, 1, 1.5],
 								}}
 								initial={{ opacity: 0, scale: 0.5 }}
-								className='text-center sm:text-left mb-2'>
+								className='text-center sm:text-left mb-2'
+							>
 								<Link
 									href={'/characters'}
-									className='bg-mred text-gray-100 py-4 px-4 mt-12 rounded-sm hover:bg-mblack shadow-xl'>
+									className='bg-mred text-gray-100 py-4 px-4 mt-12 rounded-sm hover:bg-mblack shadow-xl'
+								>
 									Browse Characters
 								</Link>
 							</motion.div>
@@ -74,7 +83,8 @@ const Home = () => {
 								duration: 1.6,
 								delay: 0.2,
 							}}
-							className='flex items-baseline hero-img'>
+							className='flex items-baseline hero-img'
+						>
 							<div className='bg-neutral-900 shadow-2xl rounded-full w-56 h-56 z-10 sm:w-[22rem] sm:h-[22rem]'>
 								<Image
 									src={Spiderman}
@@ -95,7 +105,8 @@ const Home = () => {
 						ease: [0.5, 0.71, 1, 1.5],
 					}}
 					initial={{ opacity: 0, scale: 0.5 }}
-					className='flex justify-center items-center sm:mt-16'>
+					className='flex justify-center items-center sm:mt-16'
+				>
 					<div className='flex flex-grow mx-auto justify-center items-center p-4'>
 						<Search />
 					</div>

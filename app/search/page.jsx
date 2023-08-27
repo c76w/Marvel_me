@@ -34,11 +34,13 @@ const SearchPage = () => {
 		<section>
 			<div className='flex flex-col sm:flex-row gap-6 justify-between items-center mb-6'>
 				<h1 className='text-3xl font-bold py-2'>
-					Search for <span className='text-mred'>&quot;{querySearch}&quot;</span>
+					Search for{' '}
+					<span className='text-mred'>&quot;{querySearch}&quot;</span>
 				</h1>
 				<Link
 					href={'/characters'}
-					className='bg-mred text-sm text-gray-100 py-2 px-3 rounded-sm hover:bg-mblack shadow-xl'>
+					className='bg-mred text-sm text-gray-100 py-2 px-3 rounded-sm hover:bg-mblack shadow-xl'
+				>
 					Browse Characters
 				</Link>
 			</div>
@@ -50,16 +52,15 @@ const SearchPage = () => {
 			{characters.length > 0 ? (
 				<div className='flex flex-wrap gap-3 mt-10 mb-10'>
 					{characters.map((character) => (
-						<CharacterCard
-							key={character.id}
-							character={character}
-						/>
+						<CharacterCard key={character.id} character={character} />
 					))}
 				</div>
 			) : (
 				<div className='px-2 py-4'>
 					<div className='font-bold text-xl p-4 text-center mb-2'>
-						Sorry, we couldn't find any characters with the name <span className='text-mred'>&quot;{querySearch}&quot;</span> please try another search.
+						Sorry, we couldn&apos;t find any characters with the name{' '}
+						<span className='text-mred'>&quot;{querySearch}&quot;</span> please
+						try another search.
 					</div>
 				</div>
 			)}

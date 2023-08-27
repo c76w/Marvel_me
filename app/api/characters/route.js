@@ -1,5 +1,5 @@
 import md5 from 'md5';
-import { NextResponse, NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 
 const baseUrl = process.env.API_BASE_URL;
 const publicKey = process.env.PUBLIC_API_KEY;
@@ -31,7 +31,10 @@ export async function GET(request) {
 	if (!response.ok) {
 		// This will activate the closest `error.js` Error Boundary
 		//throw new Error('Failed to fetch data');
-		return NextResponse.json({ Error: 'Failed to fetch data' }, { status: 500 });
+		return NextResponse.json(
+			{ Error: 'Failed to fetch data' },
+			{ status: 500 }
+		);
 	}
 
 	// const results = response.json();

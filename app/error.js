@@ -1,5 +1,5 @@
 'use client'; // Error components must be Client Components
-
+import React from 'react';
 import { useEffect } from 'react';
 import Deadpool from './imgs/deadpool.png';
 import Image from 'next/image';
@@ -22,13 +22,16 @@ export default function Error({ error, reset }) {
 				/>
 			</div>
 			<div className='flex flex-col justify-center items-center p-4'>
-				<h2 className='text-3xl font-bold mb-8 text-center'>Oops... something went wrong!</h2>
+				<h2 className='text-3xl font-bold mb-8 text-center'>
+					Oops... something went wrong!
+				</h2>
 				<button
 					onClick={
 						// Attempt to recover by trying to re-render the segment
 						() => reset()
 					}
-					className='bg-mred hover:bg-neutral-800 text-white rounded-md py-2 px-4'>
+					className='bg-mred hover:bg-neutral-800 text-white rounded-md py-2 px-4'
+				>
 					Try again
 				</button>
 			</div>

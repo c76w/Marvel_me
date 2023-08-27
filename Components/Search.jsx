@@ -1,5 +1,5 @@
 'use client';
-
+import React from 'react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
@@ -18,9 +18,7 @@ const Search = (querySearch) => {
 	};
 	return (
 		<div>
-			<form
-				className='flex items-center'
-				onSubmit={handleSubmit}>
+			<form className='flex items-center' onSubmit={handleSubmit}>
 				<input
 					type='text'
 					value={searchTerm}
@@ -32,7 +30,8 @@ const Search = (querySearch) => {
 				/>
 				<button
 					type='submit'
-					className='bg-mred text-gray-100 rounded-tr-sm rounded-br-sm p-2 sm:p4 hover:bg-mblack'>
+					className='bg-mred text-gray-100 rounded-tr-sm rounded-br-sm p-2 sm:p4 hover:bg-mblack'
+				>
 					Search
 				</button>
 			</form>

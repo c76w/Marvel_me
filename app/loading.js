@@ -1,3 +1,4 @@
+import React from 'react';
 import Shield from './imgs/capitan_america_sheild.png';
 import Image from 'next/image';
 const Loading = () => {

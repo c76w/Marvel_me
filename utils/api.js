@@ -18,7 +18,9 @@ export const searchCharacters = async (querySearch = '') => {
 
 	//Check if the daily API requests has been reached
 	if (response.status == 429) {
-		throw new Error('There was a problem loading the data, please try again later.');
+		throw new Error(
+			'There was a problem loading the data, please try again later.'
+		);
 	}
 	//Check for any other errors
 	if (!response.ok) {
@@ -37,7 +39,9 @@ export const getCharacters = async (offset = 0, limit = 100) => {
 
 	//Check if the daily API requests has been reached
 	if (response.status == 429) {
-		throw new Error('There was a problem loading the data, please try again later.');
+		throw new Error(
+			'There was a problem loading the data, please try again later.'
+		);
 	}
 	//Check for any other errors
 	if (!response.ok) {
@@ -56,7 +60,9 @@ export const getCharacterDetail = async (characterId) => {
 
 	//Check if the daily API requests has been reached
 	if (response.status == 429) {
-		throw new Error('There was a problem loading the data, please try again later.');
+		throw new Error(
+			'There was a problem loading the data, please try again later.'
+		);
 	}
 	//Check for any other errors
 	if (!response.ok) {
@@ -75,7 +81,9 @@ export const getCharacterComics = async (characterId) => {
 
 	//Check if the daily API requests has been reached
 	if (response.status == 429) {
-		throw new Error('There was a problem loading the data, please try again later.');
+		throw new Error(
+			'There was a problem loading the data, please try again later.'
+		);
 	}
 	//Check for any other errors
 	if (!response.ok) {

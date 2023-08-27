@@ -7,7 +7,8 @@ const Header = () => {
 				<div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 container'>
 					<Link
 						href='/'
-						className='flex items-center self-center text-lg sm:text-2xl font-semibold whitespace-nowrap'>
+						className='flex items-center self-center text-lg sm:text-2xl font-semibold whitespace-nowrap'
+					>
 						<span className='text-mred'>MARVEL</span>me
 					</Link>
 				</div>

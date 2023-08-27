@@ -42,7 +42,9 @@ const Characters = () => {
 	if (error) {
 		return (
 			<div className='mt-12 px-2 py-4'>
-				<div className='font-bold text-xl p-4 text-center mb-2'>Error: {error.message}</div>
+				<div className='font-bold text-xl p-4 text-center mb-2'>
+					Error: {error.message}
+				</div>
 			</div>
 		);
 	}
@@ -59,10 +61,7 @@ const Characters = () => {
 			<div className='cards mt-10 mb-10'>
 				{/* Render Characters */}
 				{characters.map((character) => (
-					<CharacterCard
-						key={character.id}
-						character={character}
-					/>
+					<CharacterCard key={character.id} character={character} />
 				))}
 			</div>
 
@@ -75,26 +74,30 @@ const Characters = () => {
 					<button
 						onClick={() => setCurrentPage(1)}
 						disabled={currentPage === 1}
-						className='bg-mred text-gray-100 py-2 px-3 rounded-tl-sm rounded-bl-sm hover:bg-mblack shadow-xl disabled:cursor-not-allowed disabled:bg-neutral-700 disabled:text-neutral-600'>
+						className='bg-mred text-gray-100 py-2 px-3 rounded-tl-sm rounded-bl-sm hover:bg-mblack shadow-xl disabled:cursor-not-allowed disabled:bg-neutral-700 disabled:text-neutral-600'
+					>
 						First
 					</button>
 					<button
 						onClick={() => setCurrentPage(currentPage - 1)}
 						disabled={currentPage === 1}
-						className='bg-mred text-gray-100 py-2 px-3 hover:bg-mblack shadow-xl disabled:cursor-not-allowed disabled:bg-neutral-700 disabled:text-neutral-600'>
+						className='bg-mred text-gray-100 py-2 px-3 hover:bg-mblack shadow-xl disabled:cursor-not-allowed disabled:bg-neutral-700 disabled:text-neutral-600'
+					>
 						Previous
 					</button>
 
 					<button
 						onClick={() => setCurrentPage(currentPage + 1)}
 						disabled={currentPage * ITEMS_PER_PAGE >= totalCharacters}
-						className='bg-mred text-gray-100 py-2 px-3 hover:bg-mblack shadow-xl disabled:cursor-not-allowed disabled:bg-neutral-700 disabled:text-neutral-600'>
+						className='bg-mred text-gray-100 py-2 px-3 hover:bg-mblack shadow-xl disabled:cursor-not-allowed disabled:bg-neutral-700 disabled:text-neutral-600'
+					>
 						Next
 					</button>
 					<button
 						onClick={() => setCurrentPage(totalPages)}
 						disabled={currentPage === totalPages}
-						className='bg-mred text-gray-100 py-2 px-3 rounded-tr-sm rounded-br-sm hover:bg-mblack shadow-xl disabled:cursor-not-allowed disabled:bg-neutral-700 disabled:text-neutral-600'>
+						className='bg-mred text-gray-100 py-2 px-3 rounded-tr-sm rounded-br-sm hover:bg-mblack shadow-xl disabled:cursor-not-allowed disabled:bg-neutral-700 disabled:text-neutral-600'
+					>
 						Last
 					</button>
 				</div>
