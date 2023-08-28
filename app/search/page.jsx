@@ -2,9 +2,9 @@
 import { searchCharacters } from '@/utils/api';
 import { useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import Search from '@/components/Search';
+import Search from '../../components/Search';
 import Link from 'next/link';
-import CharacterCard from '@/components/CharacterCard';
+import CharacterCard from '../../components/CharacterCard';
 import Loading from './loading';
 
 const SearchPage = () => {

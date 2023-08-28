@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import { getCharacters } from '@/utils/api';
-import Search from '@/components/Search';
+import Search from '../../components/Search';
 import { useState, useEffect } from 'react';
-import CharacterCard from '@/components/CharacterCard';
+import CharacterCard from '../../components/CharacterCard';
 import Loading from './loading';
 
 const Characters = () => {
