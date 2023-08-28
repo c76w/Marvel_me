@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Spiderman from './imgs/spiderman1.png';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import Search from '@/Components/Search';
+import Search from '@/components/Search';
 
 const Home = () => {
 	return (
@@ -14,7 +14,7 @@ const Home = () => {
 					<div className='flex flex-col basis-1/3 p-4 gap-8'>
 						<div className='text-center sm:text-left'>
 							<motion.p
-								animate={{ y: [50, 150, 0], opacity: 1, scale: 1 }}
+								animate={{ x: [-500, 0], opacity: 1, scale: 1 }}
 								transition={{
 									duration: 1,
 									delay: 1,
@@ -54,7 +54,7 @@ const Home = () => {
 								and the X-Men.
 							</motion.h3>
 							<motion.div
-								animate={{ y: [100, 0], opacity: 1, scale: 1 }}
+								animate={{ x: [-500, 0], opacity: 1, scale: 1 }}
 								transition={{
 									duration: 1,
 									delay: 3,
@@ -75,13 +75,10 @@ const Home = () => {
 					<div className='flex flex-col basis-1/3 justify-center items-center p-4'>
 						<motion.div
 							initial={{ scale: 0 }}
-							animate={{ x: [500, 0], y: [-500, 0], rotate: 1080, scale: 1 }}
+							animate={{ scale: 1 }}
 							transition={{
-								// type: 'spring',
-								stiffness: 260,
-								damping: 20,
-								duration: 1.6,
-								delay: 0.2,
+								duration: 1.8,
+								delay: 1.5,
 							}}
 							className='flex items-baseline hero-img'
 						>

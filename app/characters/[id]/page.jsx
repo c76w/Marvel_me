@@ -1,9 +1,9 @@
 import React from 'react';
-import CharacterComic from '@/Components/CharacterComic';
+import CharacterComic from '@/components/CharacterComic';
 import { getCharacterComics, getCharacterDetail } from '@/utils/api';
 import Image from 'next/image';
 import Link from 'next/link';
-import Search from '@/Components/Search';
+import Search from '@/components/Search';
 
 // Dynamic metadata
 export async function generateMetadata({ params }) {
