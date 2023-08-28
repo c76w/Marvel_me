@@ -82,13 +82,13 @@ const Home = () => {
 							}}
 							className='flex items-baseline hero-img'
 						>
-							<div className='bg-neutral-900 shadow-2xl rounded-full w-56 h-56 z-10 sm:w-[22rem] sm:h-[22rem]'>
+							<div className='bg-neutral-900 shadow-2xl rounded-full w-56 h-56 z-10 md:w-[22rem] md:h-[22rem]'>
 								<Image
 									src={Spiderman}
 									alt='Spiderman'
 									height={1000}
 									width={1000}
-									className='w-64 h-64 z-20 rounded-full sm:w-96 sm:h-96'
+									className='w-64 h-64 z-20 rounded-full md:w-96 md:h-96'
 								/>
 							</div>
 						</motion.div>
