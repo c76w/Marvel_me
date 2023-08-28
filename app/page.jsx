@@ -10,7 +10,7 @@ const Home = () => {
 	return (
 		<main className='h-screen w-screen cover overflow-hidden'>
 			<div className='h-screen w-screen layer flex flex-col justify-center pt-4'>
-				<div className='flex flex-col-reverse sm:flex-row justify-center sm:justify-evenly items-center gap-4'>
+				<div className='flex flex-col-reverse md:flex-row justify-center sm:justify-evenly items-center gap-4'>
 					<div className='flex flex-col basis-1/3 p-4 gap-8'>
 						<div className='text-center sm:text-left'>
 							<motion.p
