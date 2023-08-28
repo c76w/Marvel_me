@@ -88,7 +88,7 @@ const Home = () => {
 									alt='Spiderman'
 									height={1000}
 									width={1000}
-									className='w-64 h-64 z-20 rounded-full md:w-[22rem} md:h-[22rem} lg:w-96 lg:h-96'
+									className='w-64 h-64 z-20 rounded-full md:w-[22rem] md:h-[22rem] lg:w-96 lg:h-96'
 								/>
 							</div>
 						</motion.div>
