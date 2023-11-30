@@ -2,6 +2,9 @@
 
 Marvelme was created for a project using NextJS and Tailwind CSS for styling. Using the Marvel developer API, you can browse or search for Marvel characters and find more details and related comics on each character.
 
+## Link to website
+<a href="https://marvel-me.vercel.app/" target="_blank">Visit the live website here</a>
+
 ## Features
 
 - External API usage
